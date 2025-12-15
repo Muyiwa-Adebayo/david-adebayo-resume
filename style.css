@@ -36,6 +36,24 @@ section {
     border-bottom: none;
 }
 
+#skills ul {
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, minmax(150px,1fr));
+
+    gap: 15px;
+    list-style: none;
+    padding: 0px;
+}
+
+#skills ul li{
+    background-color: #eeeeee;
+    padding: 16px;
+    text-align: center;
+    border-radius: 4px;
+    font-weight: 400;
+}
+
 footer {
     background-color: black;
     color: white;
