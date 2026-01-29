@@ -38,22 +38,25 @@ const header = document.querySelector('header')
 
 header.addEventListener('click', function(){
     header.style.backgroundColor = "darkblue"
-    alert("Header colour changed")
+    // alert("Header colour changed")
 })
 
 // DOM interactive Skills
 
-const skills = document.querySelectorAll('#skills ul li')
+// const skills = document.querySelectorAll('#skills ul li')
 
-skills.forEach(skill => {
-    skill.addEventListener('mouseover', function (){
-        skill.style.backgroundColor = "#FCF4D6"
-        skill.style.fontWeight = "bold"
-        skill.style.animation = "0.8s"
-    })
+// skills.forEach(skill => {
+//     skill.addEventListener('mouseover', function (){
+//         skill.style.backgroundColor = "#FCF4D6"
+//         skill.style.fontWeight = "bold"
+//         skill.style.animation = "0.8s"
+//     })
 
-    skill.addEventListener('mouseout', function(){
-        skill.style.backgroundColor = "#eeeeee"
-        skill.style.fontWeight = "400"
-    })
-});
+//     skill.addEventListener('mouseout', function(){
+//         skill.style.backgroundColor = "#eeeeee"
+//         skill.style.fontWeight = "400"
+//     })
+// });
+
+
+// Tooltip for header
