@@ -60,3 +60,24 @@ header.addEventListener('click', function(){
 
 
 // Tooltip for header
+const tooltipContainer = document.querySelector('.tooltip-container');
+const tooltipText = document.querySelector('.tooltip-text');
+
+const showTooltip = (event) => {
+    tooltipText.style.visibility = "visible"
+    tooltipText.style.opacity = "1"
+    tooltipText.style.transition = "0.5s"
+    tooltipText.stlye.top = `${event.clientY + 10}px`;
+    tooltipText.stlye.left = `${event.clientX + 10}px`;
+}
+
+const hideTooltip = () => {
+    tooltipText.style.visibility = "hidden"
+    tooltipText.style.opacity = "0"
+    tooltipText.style.transition = "0.5s"
+}
+
+tooltipContainer.addEventListener('mouseover', showTooltip)
+tooltipContainer.addEventListener('mousemove', showTooltip)
+tooltipContainer.addEventListener('mouseout', hideTooltip)
+
